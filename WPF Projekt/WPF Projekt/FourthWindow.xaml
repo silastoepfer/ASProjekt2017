@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPF_Projekt.FourthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sportboot Binnen" Height="355" Width="539" Topmost="True"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None">
+
+    <Window.Resources>
+        <!--<Color x:Key="Color1">#FF70C2E8</Color>-->
+    </Window.Resources>
+
+
+    <Grid Background="#202023">
+
+        <Button  Name="closeapp" Margin="501,0,0,317" Foreground="#870c2c">
+            <Image Source="C:\GitHub\ASProjekt2017\images\redcross.jpg" />
+        </Button>
+        
+        <Button Name="B2Main" Content="Zurück zum Hauptmenü" Margin="351,280,26,0" VerticalAlignment="Top" Click="B2Main_Click"/>
+
+        <Label x:Name="resultText" Content="LOSER!" FontSize="40" Foreground="#870c2c" HorizontalAlignment="Left" Margin="159,80,0,0" VerticalAlignment="Top" Height="70" Width="332"/>
+        <Label x:Name="percent" Content="000%"  FontSize="40" Foreground="#870c2c" HorizontalAlignment="Left" Height="70" Margin="65,254,0,0" VerticalAlignment="Top" Width="110"/>
+
+
+    </Grid>
+</Window>
