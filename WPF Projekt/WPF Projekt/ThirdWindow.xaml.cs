@@ -32,6 +32,9 @@ namespace WPF_Projekt
             this.Close();
         }
 
-        
+        private void closeapp_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

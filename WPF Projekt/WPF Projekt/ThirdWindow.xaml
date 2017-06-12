@@ -12,13 +12,13 @@
 
     <Grid Background="#202023">
 
-        <Button  Name="closeapp" Margin="501,0,0,317" Foreground="#870c2c">
+        <Button Name="closeapp" Margin="501,0,0,317" Foreground="#870c2c" Click="closeapp_Click">
             <Image Source="C:\GitHub\ASProjekt2017\images\redcross.jpg" />
         </Button>
 
         <Button Name="endtest" Content="Beenden" Margin="446,315,10,0" VerticalAlignment="Top" Width="75" Click="endtest_Click"/>
 
-        <Label x:Name="question" Content="Frage" FontSize="18" Foreground="Gray" HorizontalAlignment="Left" Height="65" Margin="46,29,0,0" VerticalAlignment="Top" Width="435"/>
+        <Label x:Name="question" Content="Wie gehts? (Frage)" FontSize="18" Foreground="Gray" HorizontalAlignment="Left" Height="65" Margin="46,29,0,0" VerticalAlignment="Top" Width="435"/>
 
 
         <StackPanel Name="answers" Margin="46,125,39,108" Height="114" RenderTransformOrigin="0.411,0.292">
@@ -27,8 +27,13 @@
             <RadioButton Content="Antwort3" FontSize="14" Foreground="#FFFFFF" Margin="5"/>
             <RadioButton Content="Antwort4" FontSize="14" Foreground="#FFFFFF" Margin="5"/>
         </StackPanel>
-        
 
+
+        <TextBlock Name="nextQ" Margin="267,280,185,0" VerticalAlignment="Top">
+        <Hyperlink NavigateUri="ThirdWindow.xaml">Nächste Frage</Hyperlink>
+        </TextBlock>
+
+        <Image Source="C:\GitHub\ASProjekt2017\images\Segelschule OSZ IMT.png" Margin="430,25,39,253" />
 
     </Grid>
 </Window>

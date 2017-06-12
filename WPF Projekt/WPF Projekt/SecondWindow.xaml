@@ -7,15 +7,15 @@
 
     <Grid OpacityMask="#FF4B4747" Background="#FF202023">
 
-        <Button  Name="closeapp" Margin="501,0,0,317" Foreground="#870c2c">
+        <Button  Name="closeapp" Margin="501,0,0,317" Foreground="#870c2c" Click="closeapp_Click">
             <Image Source="C:\GitHub\ASProjekt2017\images\redcross.jpg" />
         </Button>
 
-        <Button Name="endconfig" Content="Konfiguration verlassen" Margin="361,258,30,0" VerticalAlignment="Top" Width="140" Click="endconfig_Click">
+        <Button Name="endconfig" Content="Speichern und Konfiguration verlassen" Margin="283,236,35,0" VerticalAlignment="Top" Click="endconfig_Click">
             <!--<Color x:Key="ControlMouseOverColor">#FF3843C4</Color>
             <Color x:Key="ControlPressedColor">#FF211AA9</Color>-->
         </Button>
-        <GridSplitter x:Name="gridSplitter" HorizontalAlignment="Left" Height="522" Margin="265,26,0,-201" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5">
+        <GridSplitter x:Name="gridSplitter" HorizontalAlignment="Left" Height="522" Margin="264,11,0,-186" VerticalAlignment="Top" Width="2" RenderTransformOrigin="0.5,0.5">
             <GridSplitter.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -26,7 +26,33 @@
             </GridSplitter.RenderTransform>
         </GridSplitter>
 
-      
+        <Image Source="C:\GitHub\ASProjekt2017\images\mss_dotted.png" Margin="10,280,464,10" />
+        <TextBlock x:Name="devNames" Foreground="LightGray" HorizontalAlignment="Left" Margin="82,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="141">
+            Database: Silas Töpfer 
+            Backend: Mattias Gornik
+            Frontend: Selina Ebert
+        </TextBlock>
+
+
+        <Image Source="C:\GitHub\ASProjekt2017\images\Segelschule OSZ IMT.png" Margin="464,280,10,10" />
+        <TextBlock x:Name="schoolAddr" Foreground="LightGray" HorizontalAlignment="Left" Margin="310,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="149">
+            Segelschule OSZ IMT GmbH
+            Marine Weg 6b
+            54321 Berlin
+        </TextBlock>
+
+
+        <Label x:Name="programmName" Content="Name des Programmes:" Foreground="White" HorizontalAlignment="Left" Margin="67,75,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="nameProg" HorizontalAlignment="Left" Height="24" Margin="260,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+
+        <Label x:Name="howMuchProcent" Content="Bestanden mit (%)" Foreground="White" HorizontalAlignment="Left" Margin="67,117,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="passWith" HorizontalAlignment="Left" Height="24" Margin="260,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+
+        <Label x:Name="delHistory" Content="Historie löschen" Foreground="White" HorizontalAlignment="Left" Margin="67,185,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="deleteHistory" Content="Löschen" HorizontalAlignment="Left" Margin="260,185,0,0" VerticalAlignment="Top" Width="75" Click="deleteHistory_Click"/>
+
+
+
 
         <!--<Expander Name="settings" Header="Einstellungen" Foreground="Gray" IsExpanded="False" Margin="37,94,320,108">
             <StackPanel Margin="10,0,35,0" Height="114" RenderTransformOrigin="0.411,0.292">

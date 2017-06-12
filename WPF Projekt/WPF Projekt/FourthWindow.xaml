@@ -12,15 +12,17 @@
 
     <Grid Background="#202023">
 
-        <Button  Name="closeapp" Margin="501,0,0,317" Foreground="#870c2c">
+        <Button  Name="closeapp" Margin="501,0,0,317" Foreground="#870c2c" Click="closeapp_Click">
             <Image Source="C:\GitHub\ASProjekt2017\images\redcross.jpg" />
         </Button>
         
         <Button Name="B2Main" Content="Zurück zum Hauptmenü" Margin="351,280,26,0" VerticalAlignment="Top" Click="B2Main_Click"/>
 
         <Label x:Name="resultText" Content="LOSER!" FontSize="40" Foreground="#870c2c" HorizontalAlignment="Left" Margin="159,80,0,0" VerticalAlignment="Top" Height="70" Width="332"/>
+
         <Label x:Name="percent" Content="000%"  FontSize="40" Foreground="#870c2c" HorizontalAlignment="Left" Height="70" Margin="65,254,0,0" VerticalAlignment="Top" Width="110"/>
 
+        <Image Source="C:\GitHub\ASProjekt2017\images\Segelschule OSZ IMT.png" Margin="430,25,40,267" />
 
     </Grid>
 </Window>

@@ -29,19 +29,24 @@
             </StackPanel>
         </Expander>-->
 
+        <Label x:Name="historyHeader" Content="Historie" Foreground="White" FontSize="15" HorizontalAlignment="Left" Margin="242,64,0,0" VerticalAlignment="Top" Width="98"/>
+        <ListBox x:Name="history" Background="Transparent" BorderBrush="AliceBlue" Foreground="White" FontSize="12" Height="107" Margin="242,90,45,112" VerticalAlignment="Top" Width="244">
 
-        <StackPanel Margin="0,2,0,-2">
-            <ListBox x:Name="listBox" Background="Transparent" BorderBrush="AliceBlue" Foreground="White" FontSize="12" HorizontalAlignment="Left" Height="130" Margin="253,90,0,112" VerticalAlignment="Top" Width="189">
-                <ListBoxItem Margin="5" Content="Fragebogen1"/>
-                <ListBoxItem Margin="5" Content="Fragebogen2"/>
-                <ListBoxItem Margin="5" Content="Fragebogen3"/>
-                <ListBoxItem Margin="5" Content="Fragebogen4"/>
-                <ListBoxItem Margin="5" Content="Fragebogen5"/>
-                <ListBoxItem Margin="5" Content="Fragebogen6"/>
+                <!--Testergebnisse-->
+
             </ListBox>
-        </StackPanel>
 
+            <Image Source="C:\GitHub\ASProjekt2017\images\Segelschule OSZ IMT.png" Margin="430,25,50,271" />
 
+        <ComboBox x:Name="chooseSheet" Text="Fragebogen wählen" BorderBrush="AliceBlue" FontSize="12" HorizontalAlignment="Left" Margin="40,92,0,0" VerticalAlignment="Top" Width="139">
+            <ComboBoxItem Margin="5" Name="sheet1">Fragebogen1</ComboBoxItem>
+            <ComboBoxItem Margin="5" Name="sheet2">Fragebogen2</ComboBoxItem>
+            <ComboBoxItem Margin="5" Name="sheet3">Fragebogen3</ComboBoxItem>
+            <ComboBoxItem Margin="5" Name="sheet4">Fragebogen4</ComboBoxItem>
+            <ComboBoxItem Margin="5" Name="sheet5">Fragebogen5</ComboBoxItem>
+            <ComboBoxItem Margin="5" Name="sheet6">Fragebogen6</ComboBoxItem>
+        </ComboBox>
+        
 
     </Grid>
 </Window>

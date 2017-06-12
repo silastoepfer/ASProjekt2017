@@ -39,5 +39,14 @@ namespace WPF_Projekt
             this.Close();
         }
 
+        private void closeapp_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void deleteHistory_Click(object sender, RoutedEventArgs e)
+        {
+            //Clear History from Mainpage
+        }
     }
 }
