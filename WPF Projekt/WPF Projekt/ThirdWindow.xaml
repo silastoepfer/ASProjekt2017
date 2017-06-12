@@ -34,6 +34,7 @@
         </TextBlock>
 
         <Image Source="C:\GitHub\ASProjekt2017\images\Segelschule OSZ IMT.png" Margin="430,25,39,253" />
+        <TextBlock x:Name="lastQ" Margin="36,280,407,0" VerticalAlignment="Top"><Hyperlink NavigateUri="ThirdWindow.xaml"><Run Text="Vorherige Frage"/></Hyperlink></TextBlock>
 
     </Grid>
 </Window>
